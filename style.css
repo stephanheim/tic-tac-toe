@@ -8,69 +8,73 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  
+}
 
-  h1 {
+h1 {
     margin-top: 80px;
     margin-bottom: 48px;
     text-align: center;
     color: white;
-  }
+}
 
-  /* Container für die Tabelle */
-  #content {
+/* Container für die Tabelle */
+#content {
     background-color: #323232;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     margin-top: 20px;
-  }
-  
-  /* Tabelle */
-  #content table {
+}
+
+/* Tabelle */
+#content table {
     border-collapse: collapse;
-  }
-  
-  #content td {
+}
+
+#content td {
     width: 100px;
     height: 100px;
     text-align: center;
     vertical-align: middle;
     font-size: 24px;
-    border: 5px solid white;  /* Dicke der Trennlinien */
+    border: 5px solid white;
+    /* Dicke der Trennlinien */
     border-color: white;
     cursor: pointer;
-  } 
+}
 
-  #content td:hover {
+#content td:hover {
     background-color: rgba(255, 255, 255, 0.1);
-  }
-  
-  /* Entfernt den äußeren Rand der Tabelle */
-  #content table {
-    border-spacing: 0; /* Kein zusätzlicher Abstand zwischen den Zellen */
-  }
-  
-  #content tr:first-child td {
-    border-top: none; /* Keine obere Linie */
-  }
-  
-  #content tr:last-child td {
-    border-bottom: none; /* Keine untere Linie */
-  }
-  
-  #content td:first-child {
-    border-left: none; /* Keine linke Linie */
-  }
-  
-  #content td:last-child {
-    border-right: none; /* Keine rechte Linie */
-  }
-  
-  .winning-line {
+}
+
+/* Entfernt den äußeren Rand der Tabelle */
+#content table {
+    border-spacing: 0;
+    /* Kein zusätzlicher Abstand zwischen den Zellen */
+}
+
+#content tr:first-child td {
+    border-top: none;
+    /* Keine obere Linie */
+}
+
+#content tr:last-child td {
+    border-bottom: none;
+    /* Keine untere Linie */
+}
+
+#content td:first-child {
+    border-left: none;
+    /* Keine linke Linie */
+}
+
+#content td:last-child {
+    border-right: none;
+    /* Keine rechte Linie */
+}
+
+.winning-line {
     position: absolute;
     height: 5px;
     background-color: white;
@@ -79,9 +83,9 @@ body {
 }
 
 .center {
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -94,7 +98,8 @@ button {
     cursor: pointer;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-bottom: 20px; /* Abstand vom unteren Rand */
+    margin-bottom: 20px;
+    /* Abstand vom unteren Rand */
 }
 
 button:hover {
@@ -105,4 +110,3 @@ button:hover {
 button:active {
     transform: scale(1);
 }
-
